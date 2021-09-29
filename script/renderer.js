@@ -2,8 +2,8 @@ import { SETTINGS, PRECALCULATED } from "/script/settings.js";
 
 const canvas = document.getElementById('canvas');
 
-const width = window.innerWidth;
-const height = window.innerHeight;
+let width = window.innerWidth;
+let height = window.innerHeight;
 
 canvas.width = width;
 canvas.height = height;
@@ -131,3 +131,12 @@ export const render = ({ car, rays, map }) => {
     drawCar(car);
     drawRays(car, rays);
 }
+
+window.addEventListener("resize", () => {
+    console.log("resize");
+    width = window.innerWidth;
+    height = window.innerHeight;
+
+    canvas.width = width;
+    canvas.height = height;
+});
