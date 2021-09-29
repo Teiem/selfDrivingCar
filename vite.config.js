@@ -7,4 +7,7 @@ export default {
         outDir: '../dist',
         publicDir: './public',
     },
+    server: {
+        port: 5000,
+    }
 }
