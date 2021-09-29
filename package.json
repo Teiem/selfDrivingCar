@@ -1,0 +1,12 @@
+{
+  "name": "self-driving-car",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --config vite.config.js src",
+    "build": "vite --config vite.config.js --emptyOutDir build src",
+    "serve": "vite --config vite.config.js preview src"
+  },
+  "devDependencies": {
+    "vite": "^2.6.0"
+  }
+}
