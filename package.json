@@ -4,7 +4,8 @@
   "scripts": {
     "dev": "vite --config vite.config.js src",
     "build": "vite --config vite.config.js --emptyOutDir build src",
-    "serve": "vite --config vite.config.js preview src"
+    "serve": "vite --config vite.config.js preview src",
+    "test":  "npm run build && npm run serve"
   },
   "devDependencies": {
     "vite": "^2.6.0"
